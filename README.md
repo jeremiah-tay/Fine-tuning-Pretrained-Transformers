@@ -10,16 +10,16 @@ The project includes an interactive Streamlit application to demonstrate and com
 ## ✨ Features
 
 ### 🚀 **Two Fine-Tuning Pipelines**
-Implements both traditional full fine-tuning and modern PEFT with LoRA.
+- Implements both traditional full fine-tuning and modern PEFT with LoRA.
 
 ### 📊 **Biomedical QA**
-Leverages the domain-specific BioBERT model to answer questions from the BioASQ dataset.
+- Leverages the domain-specific BioBERT model to answer questions from the BioASQ dataset.
 
 ### 🔬 **Performance Evaluation**
-Automatically calculates metrics like Exact Match, F1 Score, Precision, and Recall.
+- Automatically calculates metrics like Exact Match, F1 Score, Precision, and Recall.
 
 ### 🎨 **Interactive Demo**
-A Streamlit app (`main.py`) allows you to input questions and see live predictions from both models side-by-side.
+- A Streamlit app (`main.py`) allows you to input questions and see live predictions from both models side-by-side.
 
 ## 📂 Project Structure
 ```
@@ -40,12 +40,12 @@ A Streamlit app (`main.py`) allows you to input questions and see live predictio
 ├── README.md
 └── requirements.txt               # Project dependencies
 ```
-### Prerequisites
+## Prerequisites
 - Python 3.8+
 - 8GB+ RAM recommended
 - GPU support (optional but recommended)
 
-### ⚙️ **Setup and Installation**
+## ⚙️ **Setup and Installation**
 
 1. **Clone the repository**
    ```bash
@@ -69,7 +69,7 @@ A Streamlit app (`main.py`) allows you to input questions and see live predictio
    - Place `BioASQ-train-factoid-6b-full-annotated.json` in the project root
    - The dataset will be automatically loaded when you run the application
   
-### **▶️ How to Run**
+## **▶️ How to Run**
 Once the setup is complete, you can launch the interactive Streamlit application.
 
 Make sure you are in the project's root directory and your virtual environment is activated, then run:
