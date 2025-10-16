@@ -25,28 +25,28 @@ A Streamlit app (`main.py`) allows you to input questions and see live predictio
 ```
 ├── data/
 │   ├── __init__.py
-│   ├── data_loader.py       # Loads the BioASQ dataset
-│   └── data_processor.py    # Prepares data for the model
+│   ├── data_loader.py             # Loads the BioASQ dataset
+│   └── data_processor.py          # Prepares data for the model
 ├── models/
 │   ├── __init__.py
-│   ├── full_finetuning.py   # Logic for the full fine-tuning model
-│   └── peft_lora.py         # Logic for the PEFT with LoRA model
+│   ├── full_finetuning.py         # Logic for the full fine-tuning model
+│   └── peft_lora.py               # Logic for the PEFT with LoRA model
 ├── utils/
 │   ├── __init__.py
-│   └── metrics.py           # Functions for performance evaluation
+│   └── metrics.py                 # Functions for performance evaluation
 ├── .gitignore
-├── BioASQ-train-factoid-6b.json # The training dataset
-├── config.py                # Central configuration for models and training
-├── main.py                  # The main Streamlit application
+├── BioASQ-train-factoid-6b.json   # The training dataset
+├── config.py                      # Central configuration for models and training
+├── main.py                        # The main Streamlit application
 ├── README.md
-└── requirements.txt         # Project dependencies
+└── requirements.txt               # Project dependencies
 ```
 ### Prerequisites
 - Python 3.8+
 - 8GB+ RAM recommended
 - GPU support (optional but recommended)
 
-### Setup
+### ⚙️ **Setup and Installation**
 
 1. **Clone the repository**
    ```bash
@@ -68,3 +68,12 @@ A Streamlit app (`main.py`) allows you to input questions and see live predictio
 4. **Download BioASQ dataset**
    - Place `BioASQ-train-factoid-6b-full-annotated.json` in the project root
    - The dataset will be automatically loaded when you run the application
+  
+### **▶️ How to Run**
+Once the setup is complete, you can launch the interactive Streamlit application.
+
+Make sure you are in the project's root directory and your virtual environment is activated, then run:
+   ```bash
+   streamlit run main.py
+   ```
+Your web browser should automatically open with the application running.
