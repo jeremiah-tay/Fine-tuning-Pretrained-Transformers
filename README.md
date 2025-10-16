@@ -40,7 +40,7 @@ The project includes an interactive Streamlit application to demonstrate and com
 ├── README.md
 └── requirements.txt               # Project dependencies
 ```
-## Prerequisites
+## 🌟 Prerequisites
 - Python 3.8+
 - 8GB+ RAM recommended
 - GPU support (optional but recommended)
