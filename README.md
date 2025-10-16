@@ -1,53 +1,46 @@
-# Fine-tuning-Pretrained-Transformers
+# 🧬 Fine-tuning-Pretrained-Transformers
 A comprehensive Streamlit application for fine-tuning BioBERT models on biomedical question-answering tasks using both full fine-tuning and Parameter-Efficient Fine-Tuning (PEFT) with LoRA techniques.
-
-## 📋 Table of Contents
-
-- [Overview](#overview)
-- [Features](#features)
-- [Architecture](#architecture)
-- [Installation](#installation)
-- [Usage](#usage)
-- [Configuration](#configuration)
-- [Project Structure](#project-structure)
-- [Performance](#performance)
-- [Troubleshooting](#troubleshooting)
-- [Contributing](#contributing)
 
 ## 🎯 Overview
 
-This application provides an interactive interface for training and comparing BioBERT models on the BioASQ dataset. It supports two fine-tuning approaches:
+This project explores and compares two prominent fine-tuning strategies—full fine-tuning and Parameter-Efficient Fine-Tuning (PEFT) with LoRA—on the BioBERT model. The goal is to analyze the trade-offs between model performance, computational efficiency, and deployment practicalities for a question-answering task on the complex BioASQ dataset.
 
-1. **Full Fine-tuning**: Traditional end-to-end fine-tuning of the entire model
-2. **PEFT with LoRA**: Parameter-efficient fine-tuning using Low-Rank Adaptation
-
-The application automatically detects and optimizes for the best available compute resources (CUDA GPU, Apple Silicon MPS, or CPU).
+The project includes an interactive Streamlit application to demonstrate and compare the models' predictions in real-time.
 
 ## ✨ Features
 
-### 🚀 **Automatic Device Detection**
-- **CUDA GPU**: Enables fp16 mixed precision for maximum performance
-- **Apple Silicon MPS**: Optimized for M1/M2/M3 Macs with 3-7x speedup
-- **CPU Fallback**: Works on any system without GPU acceleration
+### 🚀 **Two Fine-Tuning Pipelines**
+Implements both traditional full fine-tuning and modern PEFT with LoRA.
 
-### 📊 **Interactive Dashboard**
-- Real-time training progress with spinners and progress bars
-- Comprehensive metrics visualization using Matplotlib
-- Side-by-side model comparison
-- Sample predictions display
+### 📊 **Biomedical QA**
+Leverages the domain-specific BioBERT model to answer questions from the BioASQ dataset.
 
-### 🔬 **Advanced Metrics**
-- **SQuAD Metrics**: Exact Match and F1 Score
-- **BERTScore**: Precision, Recall, and F1 Score
-- **Performance Comparison**: Detailed model comparison tables
+### 🔬 **Performance Evaluation**
+Automatically calculates metrics like Exact Match, F1 Score, Precision, and Recall.
 
-### 🎨 **Rich Visualizations**
-- Bar charts for individual model performance
-- Side-by-side comparison plots
-- Interactive Streamlit components
+### 🎨 **Interactive Demo**
+A Streamlit app (`main.py`) allows you to input questions and see live predictions from both models side-by-side.
 
-## 🛠️ Installation
-
+## 📂 Project Structure
+```
+├── data/
+│   ├── __init__.py
+│   ├── data_loader.py       # Loads the BioASQ dataset
+│   └── data_processor.py    # Prepares data for the model
+├── models/
+│   ├── __init__.py
+│   ├── full_finetuning.py   # Logic for the full fine-tuning model
+│   └── peft_lora.py         # Logic for the PEFT with LoRA model
+├── utils/
+│   ├── __init__.py
+│   └── metrics.py           # Functions for performance evaluation
+├── .gitignore
+├── BioASQ-train-factoid-6b.json # The training dataset
+├── config.py                # Central configuration for models and training
+├── main.py                  # The main Streamlit application
+├── README.md
+└── requirements.txt         # Project dependencies
+```
 ### Prerequisites
 - Python 3.8+
 - 8GB+ RAM recommended
