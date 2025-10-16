@@ -35,7 +35,6 @@ A Streamlit app (`main.py`) allows you to input questions and see live predictio
 │   ├── __init__.py
 │   └── metrics.py                 # Functions for performance evaluation
 ├── .gitignore
-├── BioASQ-train-factoid-6b.json   # The training dataset
 ├── config.py                      # Central configuration for models and training
 ├── main.py                        # The main Streamlit application
 ├── README.md
@@ -66,6 +65,7 @@ A Streamlit app (`main.py`) allows you to input questions and see live predictio
    ```
 
 4. **Download BioASQ dataset**
+   - Download the BioASQ dataset from Kaggle (https://www.kaggle.com/datasets/maverickss26/bioasq-dataset/data)
    - Place `BioASQ-train-factoid-6b-full-annotated.json` in the project root
    - The dataset will be automatically loaded when you run the application
   
