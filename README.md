@@ -79,6 +79,6 @@ Once the setup is complete, you can launch the interactive Streamlit application
    Your web browser should automatically open with the application running.
 
 2. **Using the Application:**
-   - In the sidebar on the left, use the **"Select Model Type"** dropdown to choose which fine-tuning strategy you want to execute: `Full Fine-tuning`, `PEFT LoRA`, or `Compare Both`.
-   - Once you've made your selection, click the main **"Start Training"** button on the page.
-   - The application will then load the data, train the selected model(s), and display a detailed comparison of the results, including performance metrics and sample predictions.
+   1. In the sidebar on the left, use the **"Select Model Type"** dropdown to choose which fine-tuning strategy you want to execute: `Full Fine-tuning`, `PEFT LoRA`, or `Compare Both`.
+   2. Once you've made your selection, click the main **"Start Training"** button on the page.
+   3. The application will then load the data, train the selected model(s), and display a detailed comparison of the results, including performance metrics and sample predictions.
